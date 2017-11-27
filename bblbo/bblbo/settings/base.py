@@ -38,8 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
-    #'django.south',
+    'django.contrib.staticfiles'
 ]
 
 MIDDLEWARE = [
@@ -75,18 +74,20 @@ WSGI_APPLICATION = 'bblbo.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
+        
         'OPTIONS': {
-            'read_default_file': os.path.join(BASE_DIR, 'database.cnf')
+            'read_default_file': os.path.join(BASE_DIR, 'settings/database.cnf'),
+            'sql_mode': 'STRICT_TRANS_TABLES'
         },
         'TEST': {
             'NAME': 'bbl',
         }
     },
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -125,9 +126,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-
-
-try:
-    from local_settings import *
-except ImportError:
-    pass
