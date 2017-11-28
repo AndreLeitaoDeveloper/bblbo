@@ -1,7 +1,15 @@
+# Virtualenv folder
 /venv/*
 venv/*
 ../venv/*
+
+# IDE folder configs for projects
 .vscode
+
+# Bytecode python files
 *.pyc
-local_settings.py
-local_settings.pyc
+
+# Configs
+jenkins.py
+prod.py
+stage.py

@@ -13,5 +13,4 @@ if __name__ == "__main__":
         except ImportError:
             raise ImportError()
         raise
-    print sys.argv
     execute_from_command_line(sys.argv)
