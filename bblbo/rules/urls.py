@@ -1,7 +1,8 @@
-from django.conf.urls import include
+from django.conf.urls import url
 
-urlpatterns = []
+from . import views
 
-urlpatterns += [
-    url(r'^catalog/', include('catalog.urls')),
+
+urlpatterns = [
+
 ]
