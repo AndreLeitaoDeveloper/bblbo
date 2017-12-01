@@ -1,10 +1,9 @@
+"""
+"""
 from django.db import models
 from .skills import Skill
 from .teams import Team
 from .stats import Stat
-
-"""
-"""
 
 class Player(models.Model):
     """
