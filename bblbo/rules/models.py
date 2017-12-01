@@ -14,6 +14,7 @@ from models.players_skills import PlayerSkill
 from models.groups import Group
 from models.stats import Stat
 from models.stats_players import StatPlayer
-
+from models.injuries import Injury
+from models.injuries_players import InjuryPlayer
 
 __all__=[]
