@@ -1,6 +1,6 @@
 from django.db import models
 
-class Teams(models.Model):
+class Team(models.Model):
 
     name = models.CharField(max_length=50, blank=False)
     race = models.CharField(max_length=80, blank=False)
@@ -8,4 +8,4 @@ class Teams(models.Model):
 
     class Meta:
         app_name = 'rules'
-        db_table = 'teams'
+        db_table = 'team'
