@@ -1,3 +1,5 @@
+"""
+"""
 from django.db import models
 from .groups import Group
 
@@ -13,3 +15,8 @@ class Skill(models.Model):
         """
         app_name = 'rules'
         db_table = 'skill'
+
+    def __str__(self):
+        """
+        """
+        return self.name
