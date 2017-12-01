@@ -1,7 +1,11 @@
+from django.db import models
 
+class Teams(models.Model):
 
-class Teams():
+    name = models.CharField(max_length=50, blank=False)
+    race = models.CharField(max_length=80, blank=False)
+    description = models.CharField(max_length=500, blank=True)
 
     class Meta:
-        app_name = 'teams'
+        app_name = 'rules'
         db_table = 'teams'
