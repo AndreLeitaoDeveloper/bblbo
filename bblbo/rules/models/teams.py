@@ -7,5 +7,5 @@ class Team(models.Model):
     description = models.CharField(max_length=500, blank=True)
 
     class Meta:
-        app_name = 'rules'
+        #app_name = 'rules'
         db_table = 'team'

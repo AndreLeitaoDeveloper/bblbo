@@ -3,16 +3,16 @@
 from django.db import models
 from .stats import Stat
 
-class Injury(models.db):
+class Injury(models.Model):
     """
     """
-    name = models.CharField(blank=False, default='-', max_lenght=100)
-    stat_id models.ForeignKey(Stat, blank=True, on_delete=models.PROTECT)
+    name = models.CharField(blank=False, default='-', max_length=100)
+    stat_id = models.ForeignKey(Stat, blank=True, on_delete=models.PROTECT)
 
     class Meta:
         """
         """
-        app_name = 'rules'
+        #app_name = 'rules'
         db_table = 'injury'
 
     def __str__(self):

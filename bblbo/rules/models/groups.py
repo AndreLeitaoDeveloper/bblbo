@@ -4,10 +4,9 @@ class Group(models.Model):
     """
     
     """
-    name = models.CharField(blank=False, default='-')
+    name = models.CharField(blank=False, default='-', max_length=100)
     
     class Meta:
-        app_name = 'rules'
         db_table = 'group'
 
     def __str__(self):

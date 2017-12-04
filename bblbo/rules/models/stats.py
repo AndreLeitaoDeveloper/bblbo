@@ -1,14 +1,14 @@
 from django.db import models
 
-class Stat(models.db):
+class Stat(models.Model):
     """
     """
 
-    name = models.CharField(blank=False, default='-', max_lenght=50)
-    code = models.CharField(blank=False, default='-', max_lenght=2)
+    name = models.CharField(blank=False, default='-', max_length=50)
+    code = models.CharField(blank=False, default='-', max_length=2)
 
     class Meta:
-        app_name = 'rules'
+        #app_name = 'rules'
         db_table = 'stat'
     
     def __str__(self):

@@ -19,7 +19,7 @@ class Player(models.Model):
     class Meta:
         """
         """
-        app_name = 'rules'
+        #app_name = 'rules'
         db_table = 'player'
 
     def __str__(self):

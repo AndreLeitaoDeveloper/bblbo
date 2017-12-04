@@ -13,7 +13,7 @@ class StatPlayer(models.Model):
     origin = models.BooleanField(blank=False, default=True)
     
     class Meta:
-        app_name = 'rules'
+        #app_name = 'rules'
         db_table = 'group'
 
     def __str__(self):
