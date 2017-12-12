@@ -11,4 +11,8 @@ class InjuryPlayer(models.Model):
     player_id = models.ForeignKey(Player, on_delete=models.PROTECT)
 
     class Meta:
+        """
+        Table name definition
+        """
+
         db_table = 'injury_player'
