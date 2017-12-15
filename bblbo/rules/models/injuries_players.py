@@ -15,5 +15,4 @@ class InjuryPlayer(models.Model):
         """
         Table name definition
         """
-
         db_table = 'injury_player'
