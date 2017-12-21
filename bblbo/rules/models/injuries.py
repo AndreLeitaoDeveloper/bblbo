@@ -12,7 +12,6 @@ class Injury(models.Model):
     class Meta:
         """
         """
-        #app_name = 'rules'
         db_table = 'injury'
 
     def __str__(self):
