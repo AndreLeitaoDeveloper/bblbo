@@ -10,8 +10,6 @@ class Injury(models.Model):
     stat_id = models.ForeignKey(Stat, blank=True, on_delete=models.PROTECT)
 
     class Meta:
-        """
-        """
         db_table = 'injury'
 
     def __str__(self):
