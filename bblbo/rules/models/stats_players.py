@@ -4,7 +4,7 @@ from .stats import Stat
 
 class StatPlayer(models.Model):
     """
-    
+    Definition of stats and player table 
     """
     stat_id = models.ForeignKey(Stat, null=False, on_delete=models.PROTECT)
     player_id = models.ForeignKey(Player, null=False, on_delete=models.PROTECT)
@@ -13,7 +13,6 @@ class StatPlayer(models.Model):
     origin = models.BooleanField(blank=False, default=True)
     
     class Meta:
-        #app_name = 'rules'
         db_table = 'group'
 
     def __str__(self):
