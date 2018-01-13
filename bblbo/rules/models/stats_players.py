@@ -13,6 +13,9 @@ class StatPlayer(models.Model):
     origin = models.BooleanField(blank=False, default=True)
     
     class Meta:
+        """
+        Table details
+        """
         db_table = 'group'
 
     def __str__(self):
